@@ -1,0 +1,582 @@
+<html>
+<head>
+<title>Datatec Skill Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Datatec Skill Academy">
+<meta name="author" content="Datatec">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href = "fonts/WEB/css/supreme.css" rel ="stylesheet" type = "text/css"/>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16x16.png">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<link rel="stylesheet" href="/assets/css/home-style.css">
+<style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+</style>      
+</head>
+
+<body>
+      <main style="background: linear-gradient(to bottom, #54A5E4 -3.27%, #F7F7F7 99.71%);">
+
+                  <nav class="bg-[#88bae3]">
+                        <div class="mx-auto max-w-7xl px-2 py-2">
+                          <div class="relative flex h-16 items-center justify-start">
+                            <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
+                              <!-- Mobile menu button-->
+                              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-transparent hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                                <span class="absolute -inset-0.5"></span>
+                                <span class="sr-only">Open main menu</span>
+                                <!--
+                                  Icon when menu is closed.
+                      
+                                  Menu open: "hidden", Menu closed: "block"
+                                -->
+                                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none" aria-hidden="true" id="mob-menu">
+                                    <path d="M16 12.625H6.625" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 7H1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 1.375L10.375 1.375" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <!--
+                                  Icon when menu is open.
+                      
+                                  Menu open: "block", Menu closed: "hidden"
+                                -->
+                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="closemenu">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                              </button>
+                            </div>
+                            <div class="flex flex-1 items-center lg:items-center justify-start lg:gap-6">
+                              <div class="flex flex-shrink-0 items-center">
+                                    <img class="h-[78px] w-auto" src="assets/image1.png" alt="">
+                              </div>
+                              <div class="hidden lg:ml-8 lg:block">
+                                <div class="flex space-x-4">
+                                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                  <a href="#" class="text-lg max-xl:text-[15px] font-medium leading-6 text-[#ffffff]">Home</a>
+                                  <a href="#" class="text-lg max-xl:text-[15px] font-medium leading-6 text-[#ffffff]">About us</a>
+                                  <a href="#" class="text-lg max-xl:text-[15px] font-medium leading-6 text-[#ffffff]">Courses</a>
+                                  <a href="#" class="text-lg max-xl:text-[15px] font-medium leading-6 text-[#ffffff]">Admission and Exam</a>
+                                  <a href="#" class="text-lg max-xl:text-[15px] font-medium leading-6 text-[#ffffff]">LBS</a>
+                                  <a href="#" class="text-lg max-xl:text-[15px] font-medium leading-6 text-[#ffffff]">Gallery</a>
+                                  <a href="#" class="text-lg max-xl:text-[15px] font-medium leading-6 text-[#ffffff]">Students Corner</a>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 max-lg:hidden">
+                              <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                                    <a href="#" class="bg-[#12558A] text-white px-3.5 py-1.5 text-lg max-xl:text-[15px] font-medium rounded-3xl border-2 border-white" aria-current="page">Contact us</a>
+                              </div>
+                      
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Mobile menu, show/hide based on menu state. -->
+                        <div class="lg:hidden" id="mobile-menu">
+                          <div class="space-y-1 px-2 pb-3 pt-2">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+                          </div>
+                        </div>
+                      </nav>
+                      
+                
+                  <div class="relative isolate px-6 pt-6 lg:pt-36 lg:px-8 cover-banner" style="background-image: url(assets/bg_22\ 1.png);">
+                    <!-- <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+                      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                    </div> -->
+                    <div class="flex flex-col md:flex-row max-w-[1536px] mx-auto" aria-hidden="true">
+                    <div class="max-w-2xl py-8 lg:py-48 lg:pl-12">
+
+                      <div class="text-left">
+                        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-7xl uppercase sm:leading-[80px]">Datatec Skill Academy</h1>
+                        <p class="mt-6 text-xl leading-8 text-[#f5f5f5]">Your Pathway to excellence in skills.</p>
+                        <div class="mt-10 flex items-center gap-x-6">
+                          
+                        <form action="" method="post">   
+                              <label for="default-search" class="mb-2 text-sm font-medium sr-only text-white">Search</label>
+                              <div class="relative">
+                                  <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-filled" width="16" height="16" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                          <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" stroke-width="0" fill="currentColor" />
+                                          <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" stroke-width="0" fill="currentColor" />
+                                    </svg>
+                                  </div>
+                                  <input type="search" id="default-search" class="block w-full lg:min-w-72 p-4 ps-10 text-sm text-neutral-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500  dark:placeholder-[#9F9F9F]  dark:focus:border-blue-500 drop-shadow-xl" placeholder="Email id" required>
+                                  <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-[#12558A] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-3xl text-sm px-4 py-2  dark:focus:ring-blue-800">Send</button>
+                              </div>
+                        </form>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="lg:absolute lg:right-0 -z-[9999]">
+                      <img src="/assets/Group20.png" class="h-full w-full object-cover lg:h-[960px] object-center" alt="">
+                      <!-- <div class="relative"> -->
+                        <img class="absolute lg:top-[25%] lg:left-[-50px] w-[60px] h-[60px]" src="assets/Group 158.svg" alt="">
+                        <img class="absolute lg:bottom-[28%] lg:right-[50%] w-[46px] h-[46px]" src="assets/Group55.svg" alt="">
+                        <img class="absolute lg:top-[100px] lg:right-[14px]  w-[85px] h-[85px]" src="assets/Group53.svg" alt="component">
+                      <!-- </div> -->                      
+                    </div>
+                    </div>
+
+                  </div>
+
+                  <!-- body cards -->
+                  <!-- <div class="bg-white py-24 sm:py-32"> -->
+                    <div class="mx-auto max-w-full px-6 lg:px-8">
+
+                      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-8 border-t border-gray-200 sm:pt-8 lg:px-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                        <article class="bg-[#FFFFFF] flex max-w-lg flex-col items-start justify-between py-4 px-8 rounded-2xl relative">
+                          <div class="group">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-[#19689F] capitalize">
+                              <a href="#">Expert Mentors</a>
+                            </h3>
+                            <p class="mt-4 line-clamp-3 text-sm leading-[30px] font-medium text-[#817F7F] max-w-[95%]">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                          </div>
+                              <div class="absolute top-[-22px] right-[-22px]">
+                                <img src="assets/Group132.svg">
+                              </div>
+                          
+                        </article>
+                  
+                        <article class="bg-[#FFFFFF] flex max-w-lg flex-col items-start justify-between py-4 px-8 rounded-2xl relative">
+                          <div class="group">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-[#19689F] capitalize">
+                              <a href="#">Official certificate</a>
+                            </h3>
+                            <p class="mt-4 line-clamp-3 text-sm leading-[30px] font-medium text-[#817F7F] max-w-[95%]">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                          </div>
+                            <div class="absolute top-[-22px] right-[-22px]">
+                              <img src="assets/Group133.svg">
+                            </div>
+                        </article>
+                        
+                        <article class="bg-[#FFFFFF] flex max-w-lg flex-col items-start justify-between py-4 px-8 rounded-2xl relative">
+                          <div class="group">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-[#19689F] capitalize">
+                              <a href="#">Offline Mode</a>
+                            </h3>
+                            <p class="mt-4 line-clamp-3 text-sm leading-[30px] font-medium text-[#817F7F] max-w-[95%]">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                          </div>
+                            <div class="absolute top-[-22px] right-[-22px]">
+                              <img src="assets/Group134.svg">
+                            </div>
+                        </article>                        
+                        
+                      </div>
+                    </div>
+
+                    <div class="container mx-auto my-16 px-6 lg:px-8">
+                      <div class="flex max-lg:flex-col max-lg:items-stretch max-md:gap-0">
+                        <div class="lg:w-2/4 max-lg:ml-0 relative">
+                          <div class="absolute">
+                            <img src="assets/Group53.svg" class="w-[68px] h-[68px]" alt="component">
+                          </div>
+                          <img src="assets/Group-about.png" class="max-w-full	h-auto object-contain" alt="study">
+                          <div class="absolute -top-8 right-24">
+                            <img src="assets/Group55.svg" class="w-[50px] h-[50px]" alt="component">
+                          </div>
+                          <div class="absolute right-20 top-[50%]">
+                            <img src="assets/Group53.svg" class="w-[64px] h-[64px]" alt="component">
+                          </div>
+                        </div>
+
+                        <div class="lg:w-2/4 max-lg:ml-0">
+                          <div class="max-w-sm">
+                            <h5 class="text-base lg:text-xl text-[#19689F] uppercase mb-3">About us</h5>
+                            <h2 class="text-3xl lg:text-5xl text-[#19689F] font-bold uppercase mb-2">Datatec Skill Academy</h2>
+                          </div>
+                          <div class="xl:max-w-[85%]">
+                            <p class="text-[#12558A] text-justify lg:text-[17px] leading-8 mb-2.5">Established in the year 1987 Managed by DATATEC EDUCATIONAL TRUST, a Pioneer in the field of imparting job oriented courses to the under privileged.
+                              DATATEC is an accredited Institution basically for skill based education with its corporate office at Mavelikara and having branches in Mavelikara, Punalur ,
+                              Kayamkulam Pathanapuram , Since its inception in 1987, it is known for its academic excellence and Govt/University affiliations point towards quality of its academic infrastructure.
+                            </p>
+                                <div class="text-right">
+                                  <button class="bg-[#5EB4F6] px-5 py-2 rounded-full hover:bg-cyan-600	 active:bg-cyan-700 focus:outline-none focus:ring focus:bg-sky-800"><a class="text-[#fff] font-medium" href="#">Read more</a></button>
+                                </div>
+                          </div>  
+                        </div>
+
+                      </div>
+                      </div>
+
+                      <div class="relative">
+                        <div class="lg:absolute lg:top-[-50px] lg:right-0">
+                          <img src="assets/Group-services2.png" class="w-[330px] h-auto object-contain max-lg:hidden" alt="component">
+                        </div>
+                      </div>
+
+                      <div class="container mx-auto my-16 px-6 lg:px-8">
+                      <div class="my-8 relative">
+                          <!-- <div class="flex flex-col gap-4">
+                            <div class="card bg-gray-200 p-4 rounded-md text-left">
+                              <p>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              </div>
+                            <div class="card bg-gray-200 p-4 rounded-md text-center">
+                              <p>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              </div>
+                            <div class="card bg-gray-200 p-4 rounded-md text-right">
+                              <p>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                              </div>
+                          </div> -->
+                          <div class="relative">
+                            <div class="absolute z-[1000] bg-cover" style="background-image: url(assets/Vector-line.svg);"></div>
+                          </div>
+                          
+                        <div class="flex flex-col justify-center pt-2 gap-y-6">
+                          
+                          <div class="flex justify-start max-lg:border-2 max-lg:border-dashed max-lg:border-[#12558A] max-lg:p-0.5 max-lg:rounded-2xl">
+                            <div class="lg:w-6/12 bg-[#19689FBF] border border-gray-200 rounded-[20px] shadow-md md:p-8 max-md:py-6 max-md:px-3 flex flex-row items-center">
+                              <img src="assets/study-icon.svg"  class="w-[65px] h-[65px]" alt="">
+                              <div class="flex flex-col">
+                                <h2 class="md:text-xl text-base  text-[#fff] font-bold mb-2 capitalize">Learn with Expert</h2>
+                                <p class="text-[#FDFDFD] md:text-base text-xs mb-4 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flex justify-center max-lg:border-2 max-lg:border-dashed max-lg:border-[#12558A] max-lg:p-0.5 max-lg:rounded-2xl">
+                            <div class="lg:w-6/12 bg-[#19689FBF] border border-gray-200 rounded-[20px] shadow-md md:p-8 max-md:py-6 max-md:px-3 flex flex-row items-center">
+                              <img src="assets/study-icon2.svg"  class="w-[65px] h-[65px]" alt="">
+                              <div class="flex flex-col">
+                                <h2 class="md:text-xl text-base text-[#fff] font-bold mb-2 capitalize">Flexible Learning</h2>
+                                <p class="text-[#FDFDFD] md:text-base text-xs mb-4 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                              </div>
+                            </div>
+                          </div>
+                        
+                         <div class="flex justify-end max-lg:border-2 max-lg:border-dashed max-lg:border-[#12558A] max-lg:p-0.5 max-lg:rounded-2xl">
+                          <div class="lg:w-6/12 bg-[#19689FBF] border border-gray-200 rounded-[20px] shadow-md md:p-8 max-md:py-6 max-md:px-3 flex flex-row items-center">
+                            <img src="assets/study-icon2.svg"  class="w-[65px] h-[65px]" alt="">
+                            <div class="flex flex-col">
+                              <h2 class="md:text-xl text-base text-[#fff] font-bold mb-2 capitalize">Industrial standard</h2>
+                              <p class="text-[#FDFDFD] md:text-base text-xs mb-4 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+                          </div>
+                         </div>
+
+
+                         </div>
+
+                        </div>
+                      </div>
+                     
+
+                      <!-- Component svg -->
+                      <div class="relative">
+                        <div class="lg:absolute lg:left-[185px] lg:bottom-[250px]">
+                          <img src="assets/Group53.svg" class="w-[60px] h-[60px] max-lg:hidden" alt="component">
+                        </div>
+
+                        <div class="absolute lg:bottom-[-125px] left-0 -bottom-20">
+                          <img src="assets/Group-services.png" class="lg:w-[330px] w-[130px] h-auto object-contain" alt="component">
+                        </div>
+
+                        <div class="lg:absolute lg:right-0 lg:bottom-[90px]">
+                          <img src="assets/Group53.svg" class="w-[60px] h-[60px] max-lg:hidden" alt="component">
+                        </div>
+                      </div>
+                      <!-- Component svg ended -->
+
+                      <!-- Testimonials -->
+                      <div class="container mx-auto my-16 px-6 lg:px-8 pt-3">
+                        <h5 class="text-sm lg:text-xl text-[#12558A] text-center uppercase mb-3">Testimonials</h5>
+                        <h2 class="text-2xl lg:text-[40px] text-[#12558A] text-center font-bold uppercase mb-2">What our students say</h2>
+
+                      <div class="relative">
+                        <div class="lg:absolute lg:right-[26%]">
+                          <img src="assets/Group136.svg" class="w-[28px] h-[28px] max-lg:hidden" alt="component">
+                        </div>
+                      </div>
+
+                      <div class="swiper mySwiper w-full py-12">
+                        <div class="swiper-wrapper h-auto">
+                          <div class="swiper-slide text-center flex justify-center items-center flex-col border border-slate-100 bg-[#F3F3F3] rounded-[20px] drop-shadow-lg">
+                            <div class="p-8">
+                            <p class="text-[#19689F] text-lg tracking-wider"><span class="text-[26px]">“</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+                              <div class="relative w-full">
+                                <img src="assets/Vector4_3.png" class="w-full h-[220px]" alt="">
+                                  <div class="absolute inset-0 flex items-center justify-center flex-col">
+                                    <img src="assets/avatars (1).png" class="" alt="">
+                                    <h4 class="text-center text-xl text-white font-semibold">George Paul</h4>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide text-center flex justify-center items-center flex-col border border-slate-100 bg-[#F3F3F3] rounded-[20px] drop-shadow-lg">
+                            <div class="p-8">
+                            <p class="text-[#19689F] text-lg tracking-wider"><span class="text-[26px]">“</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+                              <div class="relative w-full">
+                                <img src="assets/Vector4_3.png" class="w-full h-[220px]" alt="">
+                                  <div class="absolute inset-0 flex items-center justify-center flex-col">
+                                    <img src="assets/avatars (3).png" class="" alt="">
+                                    <h4 class="text-center text-xl text-white font-semibold">George Paul</h4>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide text-center flex justify-center items-center flex-col border border-slate-100 bg-[#F3F3F3] rounded-[20px] drop-shadow-lg">
+                            <div class="p-8">
+                            <p class="text-[#19689F] text-lg tracking-wider"><span class="text-[26px]">“</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+                              <div class="relative w-full">
+                                <img src="assets/Vector4_3.png" class="w-full h-[220px]" alt="">
+                                  <div class="absolute inset-0 flex items-center justify-center flex-col">
+                                    <img src="assets/avatars (2).png" class="" alt="">
+                                    <h4 class="text-center text-xl text-white font-semibold">Miya Antony</h4>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide text-center flex justify-center items-center flex-col border border-slate-100 bg-[#F3F3F3] rounded-[20px] drop-shadow-lg">
+                            <div class="p-8">
+                            <p class="text-[#19689F] text-lg tracking-wider"><span class="text-[26px]">“</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+                              <div class="relative w-full">
+                                <img src="assets/Vector4_3.png" class="w-full h-[220px]" alt="">
+                                <div class="absolute inset-0 flex items-center justify-center flex-col">
+                                    <img src="assets/avatars (1).png" class="" alt="">
+                                    <h4 class="text-center text-xl text-white font-semibold">Miya Antony</h4>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide text-center flex justify-center items-center flex-col border border-slate-100 bg-[#F3F3F3] rounded-[20px] drop-shadow-lg">
+                            <div class="p-8">
+                            <p class="text-[#19689F] text-lg tracking-wider"><span class="text-[26px]">“</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            </div>
+                              <div class="relative w-full">
+                                <img src="assets/Vector4_3.png" class="w-full h-[220px]" alt="">
+                                  <div class="absolute inset-0 flex items-center justify-center">
+                                    <img src="assets/avatars (2).png" class="" alt="">
+                                  </div>
+                              </div>  
+                          </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>                      
+
+                      </div>
+
+                    <!--Contact section  -->
+                    <div class="container mx-auto md:pt-6 my-16 px-6 lg:px-8">
+                      <div class="flex max-lg:flex-col max-lg:items-stretch gap-0 lg:gap-10">
+                        
+                          <div class="lg:w-2/4 max-lg:ml-0 max-lg:mb-12">
+                          <h5 class="text-lg text-[#19689F] uppercase mb-3 md:text-[22px]">Contact Us</h5>
+                          <h2 class="text-2xl text-[#19689F] font-bold mb-3 md:text-[42px] md:leading-[52px] tracking-tight">Empowering Futures, Explore Excellence at Datatec</h2>
+                          <p class="text-[#19689F] text-base md:text-xl md:leading-[33px] text-justify md:max-w-[85%]">At the Datatec Skill Academy, we foster an environment that encourages innovation, critical thinking, and holistic growth.
+                          Join us on a journey where learning transcends boundaries and opens doors to endless opportunities in the ever-evolving realm of management and technology.</p>
+                          </div>
+
+                          <div class="lg:w-2/4 lg:ml-4 ml-0 relative">
+                            <!-- <div class="max-w-sm"> -->
+                              <div class="absolute lg:top-[-100px] top-[-22px] ">
+                                <img src="assets/Group51.svg" class="w-[62px] h-[62px] max-lg:w-[44px] max-lg:h-[44px] drop-shadow-2xl" alt="component">
+                              </div>
+                              <div class="bg-[#19689F] px-10 py-10 lg:px-14 rounded-[8px] lg:rounded-2xl lg:max-w-2xl">
+                                <h4 class="text-base md:text-2xl font-bold text-white mb-2 lg:mb-3">Talk To Us</h4>
+                                <p class="text-sm leading-6 text-white md:text-xl md:leading-[32px]">For Admission/Placement Assistance<br>
+                                  +91 9526960707</p>
+
+                                    <form class="mx-auto mb-0">
+                                      <div class="relative z-0">
+                                        <input type="text" id="small_standard" class="block w-full px-0 py-2 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                        <label for="small_standard" class="absolute text-xs text-slate-300 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-slate-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Name</label>
+                                      </div>
+
+                                      <div class="relative z-0 mt-3">
+                                        <input type="text" id="small_standard" class="block w-full px-0 py-2 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                        <label for="small_standard" class="absolute text-xs text-slate-300 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-slate-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Email</label>
+                                      </div>
+
+                                      <div class="relative z-0 mt-3">
+                                        <input type="number" id="small_standard" class="block w-full px-0 py-2 text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                                        <label for="small_standard" class="absolute text-xs text-slate-300 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-slate-300 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Phone</label>
+                                      </div>
+
+                                      <div class="flex justify-center pt-8">
+                                        <button type="button" class="py-2.5 px-5 me-2 text-sm font-medium text-slate-100 focus:outline-none bg-[#5EB4F6] rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200  dark:border-gray-600">
+                                        Connect with us
+                                        </button>
+                                      </div>
+                                    </form>
+                              </div>
+
+                              <div class="absolute right-0 bottom-[-24px] lg:bottom-0">
+                                <img src="assets/Group51.svg" class="w-[62px] h-[62px] max-lg:w-[44px] max-lg:h-[44px] drop-shadow-2xl" alt="component">
+                              </div>
+
+                            <!-- </div> -->
+                          </div>
+                          
+                      </div>
+                    </div>    
+
+
+                    <footer class="p-4 bg-[#F1F1F1] sm:p-8 w-full footer-sections relative">
+                      <div class="mx-auto">
+                          <div class="md:flex md:justify-evenly md:items-center">
+                              <div class="mb-6 md:mb-0">
+                                  <a href="index.php">
+                                      <img src="assets/image1.png" class="mr-3" alt="FlowBite Logo" />
+                                  </a>
+                                  <p class="text-[#19689F]">North of Mitchel Jn, Mavelikara<br>
+                                    +91 9526 960707, +91 9526 940707 <br>
+                                    datatecmvk@gmail.com
+                                    </p>
+                              </div>
+                              <div class="grid gap-6 px-4 py-6 lg:py-8 md:grid-cols-3">
+                                  <div>
+                                      <h2 class="mb-6 text-sm lg:text-xl font-semibold text-[#19689F]">Our Courses</h2>
+                                      <ul class="text-[#19689F]">
+                                          <li class="mb-2">
+                                              <a href="https://flowbite.com" class="hover:underline">Online/Distance Degree Courses</a>
+                                          </li>
+                                          <li class="mb-2">
+                                              <a href="https://tailwindcss.com/" class="hover:underline">Diploma/Advanced Diploma Courses</a>
+                                          </li>
+                                          <li class="mb-2">
+                                            <a href="https://tailwindcss.com/" class="hover:underline">ITI/KGCE Engineering Courses</a>
+                                        </li>
+                                      </ul>
+                                  </div>
+                                  <div>
+                                      <h2 class="mb-6 text-sm lg:text-xl font-semibold text-[#19689F]">Admission</h2>
+                                      <ul class="text-[#19689F]">
+                                          <li class="mb-2">
+                                              <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Admission Procedure</a>
+                                          </li>
+                                          <li class="mb-2">
+                                              <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Online Application</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div>
+                                      <h2 class="mb-6 text-sm lg:text-xl font-semibold text-[#19689F]">Useful links</h2>
+                                      <ul class="text-[#19689F]">
+                                          <li class="mb-2">
+                                              <a href="#" class="hover:underline">Privacy Policy</a>
+                                          </li>
+                                          <li class="mb-2">
+                                              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                          <div class="sm:flex sm:items-center sm:justify-between">
+                              <span class="text-sm text-[#19689F] sm:text-center">© 2024 <a href="#" class="hover:underline">Datatec</a>. All Rights Reserved.
+                              </span>
+                              <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                                  <!-- <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                  </a>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                                  </a>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                                  </a>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                                  </a>
+                                  <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                                  </a> -->
+                                  <a href="https://www.tapclone.in/" class="text-[#19689F]" target="_blank">Developed by Tapclone</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="absolute lg:top-0 right-0 max-lg:bottom-0 w-[204px] h-[204px] lg:w-[350px] lg:h-[350px]  object-contain">
+                        <img src="assets/footer-bg.png" alt="">
+                      </div>
+                  </footer>
+                    <!--Contact ended  -->
+
+
+
+                
+      </main>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const menuButton = document.querySelector('[aria-controls="mobile-menu"]');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const openIcon = document.getElementById('mob-menu');
+  const closeIcon = document.getElementById('closemenu');
+
+  function toggleMenu() {
+    const expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+    menuButton.setAttribute('aria-expanded', !expanded);
+    mobileMenu.classList.toggle('hidden', expanded);
+
+    // Toggle between open and close icons
+    openIcon.classList.toggle('hidden', !expanded);
+    closeIcon.classList.toggle('hidden', expanded);
+  }
+
+  mobileMenu.classList.add('hidden');
+  menuButton.addEventListener('click', toggleMenu);
+
+    </script>
+    
+    
+    
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    slidesPerView: 1,
+    spaceBetween: 10,
+    centeredSlides: true,
+    grabCursor: true,
+    loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+     pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+      keyboard: true,
+      
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      },
+  });
+</script>
+</body>
+</html>

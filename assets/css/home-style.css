@@ -1,0 +1,57 @@
+@import url("/Fonts/WEB/css/supreme.css");
+
+html {
+      scroll-behavior: smooth;
+}
+body {
+      font-family: 'Poppins', sans-serif;
+}
+
+.cover-banner {
+      background-image: url('/assets/bg_22\ 1.png');
+      background-position: center;
+      background-size:cover;
+}
+
+.link-hover a {
+      position: relative;
+      border: none;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 1200ms;
+      transition-property: color;
+}
+.link-hover a:focus,
+.link-hover a:hover {
+  color: #3b7fb7;
+}
+
+.link-hover a:focus:after,
+.link-hover a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.link-hover a:after {
+      content: "";
+      pointer-events: none;
+      bottom: -2px;
+      left: 50%;
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: #4492ce;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: width, left;
+    }
+
+.footer-sections {
+      border-top-right-radius: 252px;
+      box-shadow: 0px 15px 60px 0px #00000040;
+}    
+
+@media (max-width:1024px) {
+      /* .footer-sections {
+            border-top-right-radius: 210px;
+      } */
+}
