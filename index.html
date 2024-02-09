@@ -28,12 +28,12 @@
 <body>
       <main style="background: linear-gradient(to bottom, #54A5E4 -3.27%, #F7F7F7 99.71%);">
 
-                  <nav class="bg-[#88bae3]">
+                  <nav class="md:bg-[#90bee4b1]">
                         <div class="mx-auto max-w-7xl px-2 py-2">
                           <div class="relative flex h-16 items-center justify-start">
                             <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
                               <!-- Mobile menu button-->
-                              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-transparent hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                                 <span class="absolute -inset-0.5"></span>
                                 <span class="sr-only">Open main menu</span>
                                 <!--
@@ -61,7 +61,7 @@
                                     <img class="h-[78px] w-auto" src="assets/image1.png" alt="">
                               </div>
                               <div class="hidden lg:ml-8 lg:block">
-                                <div class="flex space-x-4">
+                                <div class="flex space-x-4 link-hover">
                                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                                   <a href="#" class="text-lg max-xl:text-[15px] font-medium leading-6 text-[#ffffff]">Home</a>
                                   <a href="#" class="text-lg max-xl:text-[15px] font-medium leading-6 text-[#ffffff]">About us</a>
@@ -100,17 +100,17 @@
                       </nav>
                       
                 
-                  <div class="relative isolate px-6 pt-6 lg:pt-36 lg:px-8 cover-banner" style="background-image: url(assets/bg_22\ 1.png);">
+                  <div class="relative isolate px-6 pt-6 lg:pt-12 lg:px-8 cover-banner">
                     <!-- <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
                       <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
                     </div> -->
                     <div class="flex flex-col md:flex-row max-w-[1536px] mx-auto" aria-hidden="true">
-                    <div class="max-w-2xl py-8 lg:py-48 lg:pl-12">
+                    <div class="max-w-2xl py-8 lg:py-44 lg:pl-12">
 
                       <div class="text-left">
                         <h1 class="text-4xl font-bold tracking-tight text-white sm:text-7xl uppercase sm:leading-[80px]">Datatec Skill Academy</h1>
                         <p class="mt-6 text-xl leading-8 text-[#f5f5f5]">Your Pathway to excellence in skills.</p>
-                        <div class="mt-10 flex items-center gap-x-6">
+                        <div class="lg:mt-10 mt-2 flex items-center gap-x-6">
                           
                         <form action="" method="post">   
                               <label for="default-search" class="mb-2 text-sm font-medium sr-only text-white">Search</label>
@@ -131,22 +131,23 @@
                     </div>
 
                     <div class="lg:absolute lg:right-0 -z-[9999]">
-                      <img src="assets/Group20.png" class="h-full w-full object-cover lg:h-[960px] object-center" alt="">
+                      <img src="assets/Group20.png" class="hidden md:block h-full w-full object-cover lg:h-[960px] object-center" alt="">
+                      <img src="assets/Group20-mob.png" class="md:hidden h-full w-full object-cover object-center max-lg:max-lg:contrast-100 drop-shadow-2xl" alt="">
                       <!-- <div class="relative"> -->
-                        <img class="absolute lg:top-[25%] lg:left-[-50px] w-[60px] h-[60px]" src="assets/Group 158.svg" alt="">
-                        <img class="absolute lg:bottom-[28%] lg:right-[50%] w-[46px] h-[46px]" src="assets/Group55.svg" alt="">
-                        <img class="absolute lg:top-[100px] lg:right-[14px]  w-[85px] h-[85px]" src="assets/Group53.svg" alt="component">
+                        <img class="absolute lg:top-[25%] lg:left-[-50px] w-[50px] h-[50px] bottom-[250px] right-[5px]" src="assets/Group 158.svg" alt="">
+                        <img class="absolute lg:bottom-[28%] lg:right-[50%]  w-[46px] h-[46px] max-lg:hidden" src="assets/Group55.svg" alt="">
+                        <img class="absolute lg:top-[100px] lg:right-[14px] bottom-0 max-lg:left-2 lg:w-[80px] lg:h-[80px] w-[53px] h-[53px]" src="assets/Group53.svg" alt="component">
                       <!-- </div> -->                      
                     </div>
                     </div>
 
                   </div>
 
-                  <!-- body cards -->
+                  <!-- article cards -->
                   <!-- <div class="bg-white py-24 sm:py-32"> -->
-                    <div class="mx-auto max-w-full px-6 lg:px-8">
+                    <div class="mx-auto max-w-full px-6 lg:px-8 max-lg:hidden">
 
-                      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-8 border-t border-gray-200 sm:pt-8 lg:px-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-8  sm:pt-8 lg:px-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                         <article class="bg-[#FFFFFF] flex max-w-lg flex-col items-start justify-between py-4 px-8 rounded-2xl relative">
                           <div class="group">
                             <h3 class="mt-3 text-lg font-semibold leading-6 text-[#19689F] capitalize">
@@ -186,6 +187,63 @@
                         
                       </div>
                     </div>
+
+                    <!-- mobile only article -->
+                    <div class="mx-auto max-w-full px-8 lg:hidden">
+
+                      <div class="swiper mySwiper-article w-full px-6 py-12">
+                        <div class="swiper-wrapper h-auto">
+                          
+                          <div class="swiper-slide text-center flex justify-center items-center">
+                            <article class="bg-[#FFFFFF] flex max-w-lg flex-col items-start justify-between py-4 px-8 rounded-2xl relative">
+                              <div class="group">
+                                <h3 class="mt-3 text-lg font-semibold leading-6 text-[#19689F] capitalize">
+                                  <a href="#">Expert Mentors</a>
+                                </h3>
+                                <p class="mt-4 line-clamp-3 text-sm leading-[30px] font-medium text-[#817F7F] max-w-[95%]">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                              </div>
+                                  <div class="absolute top-[-22px] right-[-22px] w-[60px] h-[60px]">
+                                    <img src="assets/Group132.svg">
+                                  </div>
+                            </article>
+                          </div>
+
+                          <div class="swiper-slide text-center flex justify-center items-center">
+                            <article class="bg-[#FFFFFF] flex max-w-lg flex-col items-start justify-between py-4 px-8 rounded-2xl relative">
+                              <div class="group">
+                                <h3 class="mt-3 text-lg font-semibold leading-6 text-[#19689F] capitalize">
+                                  <a href="#">Official certificate</a>
+                                </h3>
+                                <p class="mt-4 line-clamp-3 text-sm leading-[30px] font-medium text-[#817F7F] max-w-[95%]">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                              </div>
+                                  <div class="absolute top-[-22px] right-[-22px] w-[60px] h-[60px]">
+                                    <img src="assets/Group133.svg">
+                                  </div>
+                            </article>
+                          </div>
+
+                          <div class="swiper-slide text-center flex justify-center items-center">
+                            <article class="bg-[#FFFFFF] flex max-w-lg flex-col items-start justify-between py-4 px-8 rounded-2xl relative">
+                              <div class="group">
+                                <h3 class="mt-3 text-lg font-semibold leading-6 text-[#19689F] capitalize">
+                                  <a href="#">Offline Mode</a>
+                                </h3>
+                                <p class="mt-4 line-clamp-3 text-sm leading-[30px] font-medium text-[#817F7F] max-w-[95%]">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                              </div>
+                                  <div class="absolute top-[-22px] right-[-22px] w-[60px] h-[60px]">
+                                    <img src="assets/Group134.svg">
+                                  </div>
+                            </article>
+                          </div>
+
+                        </div>
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div> -->
+                      </div>      
+
+                    </div>
+                    <!-- article end -->
 
                     <div class="container mx-auto my-16 px-6 lg:px-8">
                       <div class="flex max-lg:flex-col max-lg:items-stretch max-md:gap-0">
@@ -580,6 +638,19 @@
           spaceBetween: 40,
         },
       },
+  });
+
+  var swiper_art = new Swiper(".mySwiper-article", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    
+    loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      keyboard: true,
+      
   });
 </script>
 </body>

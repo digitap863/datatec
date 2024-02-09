@@ -8,9 +8,15 @@ body {
 }
 
 .cover-banner {
-      background-image: url('/assets/bg_22\ 1.png');
+      background-image: url('/assets/bg-transparent.png');
       background-position: center;
       background-size:cover;
+}
+ 
+@media (max-width: 767px) {
+.cover-banner {
+      background-image: none !important;
+}
 }
 
 .link-hover a {
